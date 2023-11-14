@@ -1,0 +1,11 @@
+a {
+    color: black;
+}
+
+.updateButton{
+    border: none;
+    background-color: rgb(5, 165, 53);
+    color: white;
+    border-radius: 2px;
+}
+

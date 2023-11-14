@@ -1,0 +1,157 @@
+.main-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #c8dbce;
+    border: 1px solid #ddd;
+    max-width: 30%;
+  }
+  
+  .modify-maincontainer h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .modify-maincontainer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .currentstock {
+    display: flex;
+    align-items: center;
+  }
+  
+  .currentstock input[type="text"] {
+    margin-left: 10px;
+    width: 15px;
+  }
+  
+  .modify-table th {
+    text-align: left;
+    padding-right: 50px;
+  }
+  
+  .modify-table input[type="text"],
+  .modify-table input[type="number"] {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .modify-table select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  
+  /*END FOR POPUPINVENTORY*/
+  
+  /*START INVENTORY FORMS */
+  
+  .inventory-main-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .inventory-main-container h1 {
+    font-size: 24px;
+    grid-column: span 2;
+    text-align: center;
+  }
+   
+  .inventory-container-right {
+    grid-column: 1 / 2;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
+  .inventory-container-left {
+    grid-column: 2 / 2;
+    display: grid;
+    grid-template-columns: max-content 2fr;
+    gap: 10px;
+  }
+  
+  
+  .inventory-table-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  #cancelButton, #proceedButton, #submitBtn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 100px;
+  }
+    
+  #submitBtn:hover, #cancelButton:hover, #proceedButton:hover {
+      background-color: #2e3842;
+  }
+    
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+
+  /* Style for the Company Information section */
+.inventory-container-bottom {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Style for the Company Information section header */
+.inventory-container-bottom h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Style for labels */
+.inventory-container-bottom label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+ 
+.inventory-main-container  h3{
+    padding: 15px;
+  }
+
+.inventory-main-container  h1{
+    padding: 15px;
+  }
+
+
+  .button-navigation {
+    text-align: right; 
+}
+
+.button-navigation button {
+    margin: 5px;
+}
+
+#table-header{
+    display: flex;
+    padding-top: 50px 0px;
+    padding-left:40px;
+}
+
+.table-responsive{
+    margin-top: -4a0px;
+}
+
+
+ 

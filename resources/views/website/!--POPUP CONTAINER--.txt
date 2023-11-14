@@ -1,0 +1,76 @@
+         <!--POPUP CONTAINER-->
+         <div class="popup">
+            <div class="popup-content">
+                <img src="./image/cancel_FILL0_wght400_GRAD0_opsz24.png" atl="Close" class="close" id="closeButton">
+                <h1>Book Your Service Appointment</h1>
+               <p>Fill out this quick and we’ll reach out right away!</p>
+                        <input type="text" name="name" placeholder="Enter Name*"> 
+                        <input type="number" name="phone" placeholder="Enter Phone No.*">
+                        <input type="text" name="email" placeholder="Enter Email*">
+
+                        <label for="service" class="service-selection">Select Service</label>
+                        <select id="service" name="service">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                        <textarea id="comment" name="" rows="9" cols="50" placeholder="How can we help you?"></textarea>
+                        <br>
+                    <div class="btn-submit">
+                        <button>Submit</button>
+                    </div>
+            </div>
+         </div>
+
+/*POPUP-FORMS */
+.popup{
+   background: rgba(0, 0, 0, 0.6);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   z-index: 1;
+}
+
+.popup-content{
+   height: 650px;
+   width: 700px;
+   background: var(--color-white);
+   padding: 20px;
+   border-radius: 5px;
+   position: relative;
+}
+.popup-content input{
+   padding: 8px;
+   margin: 20px auto;
+   display: block;
+   height: 7%;
+   width: 60%;
+   border: 1px solid #504e4e;
+}
+.popup-content img{
+   background-color: var(--color-white);
+   position: absolute;
+   top: -15px;
+   right: -15px;
+   height: 20px;
+   width: 20px;
+   border-radius: 50%;
+}
+/*POPUP-END*/
+
+const openButton = document.getElementById("btn-request");
+const closeButton = document.getElementById("closeButton");
+const popup = document.querySelector(".popup");
+
+openButton.addEventListener("click", function(){
+  popup.style.display ="flex";
+});
+
+closeButton.addEventListener("click", function(){
+  popup.style.display ="none";
+});
